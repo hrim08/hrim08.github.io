@@ -154,6 +154,55 @@
       color: inherit;
     }
 
+    .experience-section {
+  margin-top: 100px;
+}
+
+.experience-section h2 {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.experience-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 28px;
+}
+
+.experience-card h3 {
+  margin: 0 0 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.experience-item {
+  padding: 16px 0;
+  border-top: 1px solid #e5e5e5;
+}
+
+.experience-item strong {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.experience-item span {
+  float: right;
+  font-size: 14px;
+  color: #888;
+}
+
+.experience-item p {
+  margin: 5px 0 0;
+  font-size: 15px;
+  color: #666;
+}
+
     @media (max-width: 700px) {
       .container {
         padding: 40px 20px 70px;
@@ -187,6 +236,17 @@
         grid-template-columns: 1fr;
         gap: 3px;
       }
+      @media (max-width: 700px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-item span {
+    float: none;
+    display: block;
+    margin-top: 3px;
+  }
+}
     }
   </style>
 </head>
@@ -333,6 +393,57 @@
 
       </section>
 
+
+      <section class="experience-section">
+
+  <h2>Experience</h2>
+
+  <div class="experience-grid">
+
+    <!-- Research -->
+    <div class="experience-card">
+      <h3>Research Experience</h3>
+
+      <div class="experience-item">
+        <strong>AnswerLab × YouTube</strong>
+        <span>2025–Present</span>
+        <p>UX Researcher</p>
+      </div>
+
+      <div class="experience-item">
+        <strong>KAIST</strong>
+        <span>2021–2023</span>
+        <p>Graduate Researcher · CIxD Lab</p>
+      </div>
+
+    </div>
+
+
+    <!-- Industry -->
+    <div class="experience-card">
+      <h3>Industry Experience</h3>
+
+      <div class="experience-item">
+        <strong>Niantic</strong>
+        <span>2022–2025</span>
+        <p>UX Researcher</p>
+      </div>
+
+      <div class="experience-item">
+        <strong>Adobe</strong>
+        <span>2022</span>
+        <p>Creative Resident</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+      
     </main>
 
 
