@@ -206,6 +206,18 @@
   color: #666;
 }
 
+.institution {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.institution img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
     @media (max-width: 700px) {
       .container {
         padding: 40px 20px 70px;
@@ -429,7 +441,10 @@
       <strong>Education</strong>
 
       <div class="experience-item">
-        <strong>KAIST</strong>
+        <strong class="institution">
+          <img src="assets/kaist-logo.png" alt="KAIST logo">
+          KAIST
+        </strong>
         <span>2021–2023</span>
         <p>Industrial design, M.S. CIXD Lab
        <br>
